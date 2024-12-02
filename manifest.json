@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Wix Policy Manager",
+  "version": "0.2",
+  "description": "Create and insert ticket policies easily.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png",
+    "default_popup_size": {
+      "width": 1400,
+      "height": 600
+    }
+  }
+}

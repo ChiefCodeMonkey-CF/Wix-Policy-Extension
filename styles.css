@@ -1,0 +1,135 @@
+/* General Styling */
+body {
+    width: 600px;
+    height: 600px;
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #0078d7;
+    margin-bottom: 15px;
+}
+
+/* Input Field */
+input#policyName {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Rich Text Editor */
+#richTextBox {
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+#richTextBox:focus {
+    outline: 2px solid #0078d7;
+}
+
+/* Buttons */
+button {
+    width: auto;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0078d7;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+button:last-child {
+    background-color: #f44336; /* Delete button color */
+}
+
+button:last-child:hover {
+    background-color: #d32f2f;
+}
+
+/* Policy List Container */
+#policyList {
+    width: 100%;
+    overflow-y: auto;
+    max-height: 250px; /* Adjustable height for scrolling */
+    border: 1px solid #ddd; /* Optional styling for clarity */
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollbar Styling */
+#policyList::-webkit-scrollbar {
+    width: 8px;
+}
+
+#policyList::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 4px;
+}
+
+#policyList::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+/* Individual Policy Styling */
+.policy-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.policy-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    color: #0078d7;
+}
+
+/* Align Buttons Horizontally */
+.policy-item-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.policy-item-actions button {
+    margin-left: 10px;
+}
